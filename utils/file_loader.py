@@ -7,7 +7,7 @@ supported_extensions = {".csv",".xlsx",".xls"}
 class FileLoadError(Exception):
     """Raised when a file cannot be loaded  or fails validation."""
     pass
-def load_dataset(file_path: Union[str,Path]) -> pd.DataFrame:
+def load_dataset(file_path: Union[str,Path]):
     path = Path(file_path)
 
     if not path.exists():
