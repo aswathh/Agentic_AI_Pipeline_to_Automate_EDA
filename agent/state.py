@@ -25,7 +25,7 @@ class EDAAgentState(TypedDict, total=False):
     visualization_paths: Optional[list[str]] # saved plot file paths
 
     #  Agent reasoning trail 
-    steps_completed: list[str]               # e.g. ["profiling", "stats", ...]
+    steps_completed: list[str]               # ["profiling", "stats", ...]
     next_action: Optional[str]               # what the agent decided to do next
     messages: list[Any]                      # LLM conversation history
 
