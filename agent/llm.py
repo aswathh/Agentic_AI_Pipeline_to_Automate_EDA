@@ -4,7 +4,6 @@ from langchain_aws import ChatBedrock
 
 load_dotenv()
 
-# Default model — can be overridden via .env
 DEFAULT_MODEL_ID = os.getenv(
     "BEDROCK_MODEL_ID",
     "anthropic.claude-haiku-4-5-20251001-v1:0",
