@@ -58,7 +58,7 @@ def correlation_analysis_tool(file_path: str) -> dict:
 
     if corr_matrix.empty or len(corr_matrix.columns) < 2:
         return {
-            "correlation_matrix": {},  
+            "correlation_matrix": {},
             "strong_correlations": [],
             "heatmap_path": None,
             "note": "Not enough numeric columns to compute correlation.",
